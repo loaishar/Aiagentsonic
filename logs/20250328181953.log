@@ -1,0 +1,30 @@
+2025-03-28 18:21:59.394 | WARNING  | __main__:main:15 - Processing your request...
+2025-03-28 18:21:59.394 | INFO     | app.agent.base:run:140 - Executing step 1/20
+2025-03-28 18:21:59.395 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized
+2025-03-28 18:22:01.222 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1554, Completion=27, Cumulative Input=1554, Cumulative Completion=27, Total=1581, Cumulative Total=1581
+2025-03-28 18:22:01.222 | INFO     | app.agent.toolcall:think:80 - ✨ Manus's thoughts: 
+2025-03-28 18:22:01.222 | INFO     | app.agent.toolcall:think:81 - 🛠️ Manus selected 1 tools to use
+2025-03-28 18:22:01.223 | INFO     | app.agent.toolcall:think:85 - 🧰 Tools being prepared: ['browser_use']
+2025-03-28 18:22:01.223 | INFO     | app.agent.toolcall:think:88 - 🔧 Tool arguments: {"action":"web_search","query":"hot trending products in USA 2023"}
+2025-03-28 18:22:01.224 | INFO     | app.agent.toolcall:execute_tool:179 - 🔧 Activating tool: 'browser_use'...
+2025-03-28 18:22:01.268 | INFO     | app.agent.toolcall:act:149 - 🎯 Tool 'browser_use' completed its mission! Result: Observed output of cmd `browser_use` executed:
+Error: Browser action 'web_search' failed: 'Browser' object has no attribute 'start'
+2025-03-28 18:22:01.269 | INFO     | app.agent.base:run:140 - Executing step 2/20
+2025-03-28 18:22:01.269 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized
+2025-03-28 18:22:04.393 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1795, Completion=87, Cumulative Input=3349, Cumulative Completion=114, Total=1882, Cumulative Total=3463
+2025-03-28 18:22:04.394 | INFO     | app.agent.toolcall:think:80 - ✨ Manus's thoughts: It seems there was an error with the web search action. Let's try navigating directly to a website that might have information on trending products in the USA. I'll go to a popular site like Amazon or a trend analysis site to gather this information. Let's proceed with that.
+2025-03-28 18:22:04.395 | INFO     | app.agent.toolcall:think:81 - 🛠️ Manus selected 1 tools to use
+2025-03-28 18:22:04.395 | INFO     | app.agent.toolcall:think:85 - 🧰 Tools being prepared: ['browser_use']
+2025-03-28 18:22:04.396 | INFO     | app.agent.toolcall:think:88 - 🔧 Tool arguments: {"action":"go_to_url","url":"https://www.amazon.com/Best-Sellers/zgbs"}
+2025-03-28 18:22:04.396 | INFO     | app.agent.toolcall:execute_tool:179 - 🔧 Activating tool: 'browser_use'...
+2025-03-28 18:22:04.444 | INFO     | app.agent.toolcall:act:149 - 🎯 Tool 'browser_use' completed its mission! Result: Observed output of cmd `browser_use` executed:
+Error: Browser action 'go_to_url' failed: 'Browser' object has no attribute 'start'
+2025-03-28 18:22:04.445 | INFO     | app.agent.base:run:140 - Executing step 3/20
+2025-03-28 18:22:04.445 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized
+2025-03-28 18:22:06.613 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2099, Completion=71, Cumulative Input=5448, Cumulative Completion=185, Total=2170, Cumulative Total=5633
+2025-03-28 18:22:06.613 | INFO     | app.agent.toolcall:think:80 - ✨ Manus's thoughts: It seems there is an issue with the browser tool, preventing navigation and search actions. As an alternative, you can manually check popular e-commerce sites like Amazon, eBay, or trend analysis platforms like Google Trends to find information on hot trending products in the USA. If you have any other requests or need further assistance, feel free to ask!
+2025-03-28 18:22:06.614 | INFO     | app.agent.toolcall:think:81 - 🛠️ Manus selected 0 tools to use
+2025-03-28 18:22:06.614 | INFO     | app.agent.base:run:140 - Executing step 4/20
+2025-03-28 18:22:06.615 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized
+2025-03-28 18:22:24.248 | ERROR    | app.agent.toolcall:think:62 - 🚨 Token limit error (from RetryError): Request may exceed input token limit (Current: 5448, Needed: 2792, Max: 8192)
+2025-03-28 18:22:24.249 | INFO     | __main__:main:17 - Request processing completed.

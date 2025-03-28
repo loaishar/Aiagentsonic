@@ -1,0 +1,23 @@
+2025-03-28 18:05:39.143 | WARNING  | __main__:main:15 - Processing your request...
+2025-03-28 18:05:39.144 | INFO     | app.agent.base:run:140 - Executing step 1/20
+2025-03-28 18:05:39.144 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized
+2025-03-28 18:05:40.354 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1555, Completion=27, Cumulative Input=1555, Cumulative Completion=27, Total=1582, Cumulative Total=1582
+2025-03-28 18:05:40.355 | INFO     | app.agent.toolcall:think:80 - ✨ Manus's thoughts: 
+2025-03-28 18:05:40.355 | INFO     | app.agent.toolcall:think:81 - 🛠️ Manus selected 1 tools to use
+2025-03-28 18:05:40.356 | INFO     | app.agent.toolcall:think:85 - 🧰 Tools being prepared: ['browser_use']
+2025-03-28 18:05:40.357 | INFO     | app.agent.toolcall:think:88 - 🔧 Tool arguments: {"action":"web_search","query":"hot trending products in USA 2023"}
+2025-03-28 18:05:40.358 | INFO     | app.agent.toolcall:execute_tool:179 - 🔧 Activating tool: 'browser_use'...
+2025-03-28 18:05:40.401 | INFO     | app.agent.toolcall:act:149 - 🎯 Tool 'browser_use' completed its mission! Result: Observed output of cmd `browser_use` executed:
+Error: Browser action 'web_search' failed: 'Browser' object has no attribute 'start'
+2025-03-28 18:05:40.402 | INFO     | app.agent.base:run:140 - Executing step 2/20
+2025-03-28 18:05:40.402 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized
+2025-03-28 18:05:43.059 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1796, Completion=81, Cumulative Input=3351, Cumulative Completion=108, Total=1877, Cumulative Total=3459
+2025-03-28 18:05:43.060 | INFO     | app.agent.toolcall:think:80 - ✨ Manus's thoughts: It seems there was an error with the web search action. Let's try a different approach to find the hot trending products in the USA for 2023. I will open a new tab and navigate to a popular site that lists trending products. Let's proceed with that.
+2025-03-28 18:05:43.060 | INFO     | app.agent.toolcall:think:81 - 🛠️ Manus selected 1 tools to use
+2025-03-28 18:05:43.061 | INFO     | app.agent.toolcall:think:85 - 🧰 Tools being prepared: ['browser_use']
+2025-03-28 18:05:43.061 | INFO     | app.agent.toolcall:think:88 - 🔧 Tool arguments: {"action":"open_tab","url":"https://www.trendhunter.com"}
+2025-03-28 18:05:43.062 | INFO     | app.agent.toolcall:execute_tool:179 - 🔧 Activating tool: 'browser_use'...
+2025-03-28 18:05:43.109 | INFO     | app.agent.toolcall:act:149 - 🎯 Tool 'browser_use' completed its mission! Result: Observed output of cmd `browser_use` executed:
+Error: Browser action 'open_tab' failed: 'Browser' object has no attribute 'start'
+2025-03-28 18:05:43.110 | INFO     | app.agent.base:run:140 - Executing step 3/20
+2025-03-28 18:05:43.110 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized

@@ -5,8 +5,7 @@ from app.config import config
 from app.prompt.browser import NEXT_STEP_PROMPT as BROWSER_NEXT_STEP_PROMPT
 from app.prompt.manus import NEXT_STEP_PROMPT, SYSTEM_PROMPT
 from app.tool import Terminate, ToolCollection
-# Import the dummy browser tool instead of the original browser tool
-from app.tool.dummy_browser_tool import DummyBrowserTool
+from app.tool.browser_use_tool import BrowserUseTool
 from app.tool.python_execute import PythonExecute
 from app.tool.str_replace_editor import StrReplaceEditor
 
@@ -34,7 +33,7 @@ class Manus(BrowserAgent):
     # Add general-purpose tools to the tool collection
     available_tools: ToolCollection = Field(
         default_factory=lambda: ToolCollection(
-            PythonExecute(), DummyBrowserTool(), StrReplaceEditor(), Terminate()
+            PythonExecute(), BrowserUseTool(), StrReplaceEditor(), Terminate()
         )
     )
 

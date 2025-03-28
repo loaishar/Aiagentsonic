@@ -1,0 +1,37 @@
+2025-03-27 02:24:23.975 | WARNING  | __main__:main:15 - Processing your request...
+2025-03-27 02:24:23.975 | INFO     | app.agent.base:run:140 - Executing step 1/20
+2025-03-27 02:24:23.976 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized
+2025-03-27 02:24:25.556 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1574, Completion=28, Cumulative Input=1574, Cumulative Completion=28, Total=1602, Cumulative Total=1602
+2025-03-27 02:24:25.556 | INFO     | app.agent.toolcall:think:80 - ✨ Manus's thoughts: 
+2025-03-27 02:24:25.557 | INFO     | app.agent.toolcall:think:81 - 🛠️ Manus selected 1 tools to use
+2025-03-27 02:24:25.557 | INFO     | app.agent.toolcall:think:85 - 🧰 Tools being prepared: ['browser_use']
+2025-03-27 02:24:25.558 | INFO     | app.agent.toolcall:think:88 - 🔧 Tool arguments: {"action":"web_search","query":"hot trending products USA dropshipping 2023"}
+2025-03-27 02:24:25.559 | INFO     | app.agent.toolcall:execute_tool:179 - 🔧 Activating tool: 'browser_use'...
+2025-03-27 02:24:27.673 | INFO     | app.tool.web_search:_try_all_engines:104 - 🔎 Attempting search with Google...
+2025-03-27 02:24:30.600 | INFO     | app.agent.toolcall:act:149 - 🎯 Tool 'browser_use' completed its mission! Result: Observed output of cmd `browser_use` executed:
+Searched for 'hot trending products USA dropshipping 2023' and navigated to first result: https://dropispy.com/best-dropshipping-products/
+All results:https://dropispy.com/best-dropshipping-products/
+https://www.shopify.com/blog/best-dropshipping-products
+https://www.autods.com/blog/product-finding/best-dropshipping-products/
+https://www.cloudways.com/blog/best-dropshipping-products/
+https://www.secomapp.com/trending-products-for-dropshipping-the-ultimate-list-for-2023/
+https://www.gelato.com/blog/best-dropshipping-products
+https://www.doba.com/blog/find-niche-products/trending-products?srsltid=AfmBOorXQuoi3WpJBe1Wcl-iYzi3t6OrsdeaRg8tpbjJ7UNuPLysWtKK
+https://en.minea.com/winning-products-list
+https://simicart.com/blog/best-dropshipping-products/
+https://zendrop.com/blog/best-dropshipping-products/
+2025-03-27 02:24:30.601 | INFO     | app.agent.base:run:140 - Executing step 2/20
+2025-03-27 02:24:43.794 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2836, Completion=29, Cumulative Input=4410, Cumulative Completion=57, Total=2865, Cumulative Total=4467
+2025-03-27 02:24:43.795 | INFO     | app.agent.toolcall:think:80 - ✨ Manus's thoughts: 
+2025-03-27 02:24:43.795 | INFO     | app.agent.toolcall:think:81 - 🛠️ Manus selected 1 tools to use
+2025-03-27 02:24:43.795 | INFO     | app.agent.toolcall:think:85 - 🧰 Tools being prepared: ['browser_use']
+2025-03-27 02:24:43.796 | INFO     | app.agent.toolcall:think:88 - 🔧 Tool arguments: {"action":"extract_content","goal":"list of trending dropshipping products for 2023"}
+2025-03-27 02:24:43.796 | INFO     | app.agent.toolcall:execute_tool:179 - 🔧 Activating tool: 'browser_use'...
+2025-03-27 02:24:46.037 | INFO     | app.llm:update_token_count:250 - Token usage: Input=7017, Completion=217, Cumulative Input=11427, Cumulative Completion=274, Total=7234, Cumulative Total=11701
+2025-03-27 02:24:46.038 | INFO     | app.agent.toolcall:act:149 - 🎯 Tool 'browser_use' completed its mission! Result: Observed output of cmd `browser_use` executed:
+Extracted from page:
+{
+  "text": "The article provides a list of trending dropshipping products for 2023, categorized into various niches. These niches include:\n\n1. Beauty and accessories\n2. Fitness/Sports\n3. Childcare (Baby products)\n4. Animals\n5. Textile/Clothing and fashion accessories\n6. Kitchen and interior decoration\n7. Children’s toys\n8. Luxury\n9. Electronic gadgets\n\nEach niche is described with examples of products that are popular or have high potential for sales in dropshipping. Additionally, the article highlights the characteristics of a winning dropshipping product, such as solving a need, being new, having a wow effect, and possessing high perceived value. The article also provides a list of 10 other high-potential dropshipping products to try, including items like the Outdoor Multifunctional Folding Chair, Magnetic Mug Shaker, and Automatic Wine Opener. The article emphasizes the importance of product research and offers methods to find winning products for dropshipping."
+}
+
+2025-03-27 02:24:46.038 | INFO     | app.agent.base:run:140 - Executing step 3/20

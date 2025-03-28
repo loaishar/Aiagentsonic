@@ -1,0 +1,43 @@
+2025-03-28 18:28:36.546 | WARNING  | __main__:main:15 - Processing your request...
+2025-03-28 18:28:36.547 | INFO     | app.agent.base:run:140 - Executing step 1/20
+2025-03-28 18:28:36.547 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized
+2025-03-28 18:28:37.908 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1556, Completion=26, Cumulative Input=1556, Cumulative Completion=26, Total=1582, Cumulative Total=1582
+2025-03-28 18:28:37.909 | INFO     | app.agent.toolcall:think:80 - ✨ Manus's thoughts: 
+2025-03-28 18:28:37.909 | INFO     | app.agent.toolcall:think:81 - 🛠️ Manus selected 1 tools to use
+2025-03-28 18:28:37.909 | INFO     | app.agent.toolcall:think:85 - 🧰 Tools being prepared: ['browser_use']
+2025-03-28 18:28:37.910 | INFO     | app.agent.toolcall:think:88 - 🔧 Tool arguments: {"action":"web_search","query":"hot trending products USA 2023"}
+2025-03-28 18:28:37.910 | INFO     | app.agent.toolcall:execute_tool:179 - 🔧 Activating tool: 'browser_use'...
+2025-03-28 18:28:37.911 | INFO     | app.agent.toolcall:act:149 - 🎯 Tool 'browser_use' completed its mission! Result: Observed output of cmd `browser_use` executed:
+Error: Browser action 'web_search' failed: type object 'Browser' has no attribute 'create'
+2025-03-28 18:28:37.911 | INFO     | app.agent.base:run:140 - Executing step 2/20
+2025-03-28 18:28:37.912 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized
+2025-03-28 18:28:40.702 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1797, Completion=96, Cumulative Input=3353, Cumulative Completion=122, Total=1893, Cumulative Total=3475
+2025-03-28 18:28:40.703 | INFO     | app.agent.toolcall:think:80 - ✨ Manus's thoughts: It seems there was an error with the web search action. Let's try a different approach to find the information about hot trending products in the USA for 2023.
+
+I'll open a new tab and navigate to a popular site that often lists trending products, such as Amazon or a similar site, and then extract the relevant information. Let's proceed with that.
+2025-03-28 18:28:40.704 | INFO     | app.agent.toolcall:think:81 - 🛠️ Manus selected 1 tools to use
+2025-03-28 18:28:40.705 | INFO     | app.agent.toolcall:think:85 - 🧰 Tools being prepared: ['browser_use']
+2025-03-28 18:28:40.706 | INFO     | app.agent.toolcall:think:88 - 🔧 Tool arguments: {"action":"open_tab","url":"https://www.amazon.com"}
+2025-03-28 18:28:40.707 | INFO     | app.agent.toolcall:execute_tool:179 - 🔧 Activating tool: 'browser_use'...
+2025-03-28 18:28:40.707 | INFO     | app.agent.toolcall:act:149 - 🎯 Tool 'browser_use' completed its mission! Result: Observed output of cmd `browser_use` executed:
+Error: Browser action 'open_tab' failed: type object 'Browser' has no attribute 'create'
+2025-03-28 18:28:40.708 | INFO     | app.agent.base:run:140 - Executing step 3/20
+2025-03-28 18:28:40.709 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized
+2025-03-28 18:28:44.397 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2110, Completion=203, Cumulative Input=5463, Cumulative Completion=325, Total=2313, Cumulative Total=5788
+2025-03-28 18:28:44.398 | INFO     | app.agent.toolcall:think:80 - ✨ Manus's thoughts: It seems there is an issue with the browser tool, preventing us from opening a new tab or performing a web search. Let's try a different approach to gather information about hot trending products in the USA for 2023.
+
+I can provide a general list of categories that are often trending based on recent data and trends. Here are some categories that have been popular:
+
+1. **Electronics**: Smart home devices, wireless earbuds, and the latest smartphones.
+2. **Health and Wellness**: Fitness trackers, home gym equipment, and health supplements.
+3. **Home and Kitchen**: Air fryers, robot vacuums, and smart kitchen gadgets.
+4. **Fashion**: Sustainable and eco-friendly clothing, athleisure wear.
+5. **Beauty**: Skincare products, especially those with natural ingredients.
+6. **Toys and Games**: Educational toys, board games, and video game consoles.
+
+If you need more specific information or a different approach, please let me know!
+2025-03-28 18:28:44.398 | INFO     | app.agent.toolcall:think:81 - 🛠️ Manus selected 0 tools to use
+2025-03-28 18:28:44.398 | INFO     | app.agent.base:run:140 - Executing step 4/20
+2025-03-28 18:28:44.399 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized
+2025-03-28 18:29:07.122 | ERROR    | app.agent.toolcall:think:62 - 🚨 Token limit error (from RetryError): Request may exceed input token limit (Current: 5463, Needed: 2931, Max: 8192)
+2025-03-28 18:29:07.123 | INFO     | __main__:main:17 - Request processing completed.

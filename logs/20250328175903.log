@@ -1,0 +1,5 @@
+2025-03-28 17:59:12.335 | WARNING  | __main__:main:15 - Processing your request...
+2025-03-28 17:59:12.335 | INFO     | app.agent.base:run:140 - Executing step 1/20
+2025-03-28 17:59:12.336 | DEBUG    | app.agent.browser:get_browser_state:59 - Browser state error: Browser context not initialized
+2025-03-28 17:59:30.092 | ERROR    | app.agent.toolcall:think:62 - 🚨 Token limit error (from RetryError): Request may exceed input token limit (Current: 0, Needed: 1966, Max: 0)
+2025-03-28 17:59:30.092 | INFO     | __main__:main:17 - Request processing completed.
