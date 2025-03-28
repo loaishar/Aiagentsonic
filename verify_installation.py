@@ -161,7 +161,8 @@ def run_basic_test():
         from app.tool.base import BaseTool
         print_success("Successfully imported BaseTool")
 
-        from app.config import config
+        import app.config
+        config = app.config.config
         print_success("Successfully imported configuration")
 
         return True
