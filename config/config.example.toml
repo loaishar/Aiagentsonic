@@ -1,0 +1,15 @@
+# Copy to config/config.toml locally. Never commit real credentials.
+[llm]
+model = "YOUR_MODEL_NAME"
+base_url = "YOUR_PROVIDER_BASE_URL"
+api_key = ""
+max_tokens = 4096
+temperature = 0.0
+
+[browser]
+headless = true
+disable_security = false
+
+[sandbox]
+use_sandbox = false
+network_enabled = false

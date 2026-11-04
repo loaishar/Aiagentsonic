@@ -1,0 +1,15 @@
+.git
+.env*
+.venv
+venv
+config/config.toml
+logs
+workspace
+output
+downloads
+screenshots
+__pycache__
+*.log
+*.pem
+*.key
+credentials*.json
